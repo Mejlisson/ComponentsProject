@@ -43,7 +43,7 @@ const TodoList: React.FC = () => {
     };
 
     return (
-        <div className="card todo-container">
+        <div className="todo-container">
             <h1>TO DO LIST</h1>
             <input
                 className="input"
