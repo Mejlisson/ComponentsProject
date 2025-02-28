@@ -1,0 +1,105 @@
+$background-color: #f4b6a4;
+$card-color: #fff6f1;
+$border-color: #d69786;
+$text-color: #755248f7;
+$button-color: #e48d7a;
+$button-hover: #cf7a69;
+$check-color: #6b4f4a;
+$font-family: "Comic Sans MS", cursive, sans-serif;
+
+body {
+  background-color: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: $font-family;
+}
+
+.todo-container {
+  width: 350px;
+  padding: 20px;
+  background: $card-color;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 5px solid $border-color;
+}
+
+h1 {
+  background: $border-color;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  
+}
+
+.input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid $border-color;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.add-button {
+  background: $button-color;
+  font-family: $font-family;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: $button-hover;
+  }
+}
+
+.Lista {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+
+  .todo-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 2px solid $border-color;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: $text-color;
+    position: relative;
+
+  
+    .delete-button {
+      font-family: $font-family;
+      background: $button-color;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: rgba(255, 0, 0, 0.8);
+      }
+    }
+  }
+}
+
+
+.plant {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
