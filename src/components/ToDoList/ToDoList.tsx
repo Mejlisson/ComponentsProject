@@ -1,4 +1,4 @@
-import "./toDoList.scss";
+import "./ToDoList.scss";
 import { useEffect, useState } from "react";
 import plantGif from "./plant.gif";
 
