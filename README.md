@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+<h3>Projektbeskrivning</h3>
+Detta är en React-baserad ToDo-applikation där du kan:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+✅ Lägga till och ta bort uppgifter i en ToDo-lista</br>
+✅ Välja ett datum från en interaktiv kalender</br>
+✅ Hämta och visa en GIF från ett API</br> 
+```bash
+https://api.thecatapi.com/v1/images/search?limit=1
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<h3>📂 Projektstruktur</h13> </br>
+<pre>/src
+ ├── components
+ │   ├── Calendar
+ │   │   ├── Calendar.tsx
+ │   │   ├── Calendar.scss
+ │   ├── Gif-API
+ │   │   ├── GifAPI.tsx
+ │   │   ├── GifAPI.scss
+ │   ├── ToDoList
+ │   │   ├── ToDoList.tsx
+ │   │   ├── ToDoList.scss
+ ├── App.tsx
+ ├── App.scss
+ ├── index.tsx
+</pre>
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+<h3>⚙️ Installation & Starta Projektet</h3>
+
+### Klona Repot
+
+```bash
+git clone https://github.com/ditt-repo.git
+cd ditt-repo
+```
+```bash
+npm install
+```
+```bash
+npm run dev
 ```
