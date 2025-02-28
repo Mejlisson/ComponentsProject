@@ -26,7 +26,7 @@ const CatFetcher: React.FC = () => { // React.FC → TypeScript-typning som spec
   }, []);
 
   return (
-    <div className="gif-container">
+    <div className="card gif-container">
       <h1>En favorit idag 🐱</h1>
       <div className="cat-wrapper">
         {catImage ? (

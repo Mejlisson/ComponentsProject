@@ -35,7 +35,7 @@ const Calendar: React.FC = () => {
   }
 
   return (
-    <div className="calendar-container">
+    <div className="card calendar-container">
       <div className="calendar-header">
         <button onClick={prevMonth}>&lt;</button>
         <h1>{getMonthYear()}</h1>
