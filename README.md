@@ -3,7 +3,10 @@ Detta är en React-baserad ToDo-applikation där du kan:
 
 ✅ Lägga till och ta bort uppgifter i en ToDo-lista</br>
 ✅ Välja ett datum från en interaktiv kalender</br>
-✅ Hämta och visa en GIF från ett API</br>
+✅ Hämta och visa en GIF från ett API</br> 
+```bash
+https://api.thecatapi.com/v1/images/search?limit=1
+```
 
 
 <h3>📂 Projektstruktur</h13> </br>
